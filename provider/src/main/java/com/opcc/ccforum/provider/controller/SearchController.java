@@ -1,7 +1,7 @@
-package com.spr.test.controller;
+package com.opcc.ccforum.provider.controller;
 
-import com.spr.test.bean.response.CommonResponse;
-import com.spr.test.service.SearchService;
+import com.opcc.ccforum.provider.bean.response.CommonResponse;
+import com.opcc.ccforum.provider.service.SearchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

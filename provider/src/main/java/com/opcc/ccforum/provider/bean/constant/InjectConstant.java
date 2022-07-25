@@ -1,4 +1,4 @@
-package com.spr.test.bean.constant;
+package com.opcc.ccforum.provider.bean.constant;
 
 /**
  * ------------------------------------------------

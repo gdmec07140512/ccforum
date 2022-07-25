@@ -1,6 +1,6 @@
-package com.spr.test.service;
+package com.opcc.ccforum.provider.service;
 
-import com.spr.test.bean.constant.InjectConstant;
+import com.opcc.ccforum.provider.bean.constant.InjectConstant;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.elasticsearch.action.admin.indices.alias.Alias;
