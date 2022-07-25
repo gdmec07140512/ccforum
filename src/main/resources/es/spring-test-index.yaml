@@ -1,0 +1,16 @@
+---
+settings:
+    index:
+        number_of_shards: 5
+        number_of_replicas: 1
+        # 查询结果最大返回值。Elasticsearch支持的最大值是2^31-1，也就是2147483647
+        max_result_window: 2147483647
+        # 重建索引时暂时不刷新
+        refresh_interval: -1
+mappings:
+    properties:
+        storeName:
+            type: keyword
+        storeId:
+            type: long
+        
