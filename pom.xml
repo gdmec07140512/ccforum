@@ -14,6 +14,7 @@
     <artifactId>ccforum</artifactId>
     <version>1.0-SNAPSHOT</version>
     <description>...</description>
+    <packaging>pom</packaging>
 
     <modules>
         <module>provider</module>
