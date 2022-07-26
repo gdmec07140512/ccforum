@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * Class HelloAction
  *
  * @author Glan
- * @description 描述内容
+ * @description 入口实例
  * @date 2022-03-28
  * ------------------------------------------------
  */
