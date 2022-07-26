@@ -1,6 +1,6 @@
-package com.spr.test.service;
+package com.opcc.ccforum.provider.service;
 
-import com.spr.test.bean.constant.InjectConstant;
+import com.opcc.ccforum.provider.bean.constant.InjectConstant;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.elasticsearch.action.admin.indices.alias.Alias;
@@ -27,7 +27,7 @@ import java.util.List;
  * ------------------------------------------------
  * Class SearchService
  *
- * @author Glan <glanlv@can-dao.com>
+ * @author Glan
  * @description 描述内容
  * @date 2022-04-06
  * ------------------------------------------------
@@ -37,15 +37,15 @@ import java.util.List;
 public class SearchService {
     @Resource(name = InjectConstant.DEFAULT_REST_HIGH_LEVEL_CLIENT)
     private RestHighLevelClient restHighLevelClient;
-    
+
     private final String INDEX_NAME = "spring-test-index";
 
     private final String INDEX_AIDER_NAME = "spring-test-index-aider";
 
     private String indexConfigYmlContent;
-    
+
     @SneakyThrows
-    public void createIndex(){
+    public void createIndex() {
         // 创建新索引
         CreateIndexRequest createIndexRequest = new CreateIndexRequest(INDEX_NAME);
         // 读取yml配置
@@ -60,12 +60,12 @@ public class SearchService {
         }
 
     }
-    
-    
-    public List<Long> search(){
+
+
+    public List<Long> search() {
         SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
         searchSourceBuilder.from(0);
-        
+
         RequestOptions options = RequestOptions.DEFAULT;
 
         try {

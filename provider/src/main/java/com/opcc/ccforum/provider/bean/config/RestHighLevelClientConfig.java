@@ -1,6 +1,6 @@
-package com.spr.test.bean.config;
+package com.opcc.ccforum.provider.bean.config;
 
-import com.spr.test.bean.constant.InjectConstant;
+import com.opcc.ccforum.provider.bean.constant.InjectConstant;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpHost;

@@ -1,31 +1,29 @@
-package com.spr.test.controller;
+package com.opcc.ccforum.consumer.action;
 
-import com.spr.test.bean.response.CommonResponse;
+import com.opcc.ccforum.consumer.bean.input.IndexInput;
+import com.opcc.ccforum.consumer.bean.output.IndexOutput;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
  * ------------------------------------------------
- * Class HelloController
+ * Class HelloAction
  *
- * @author Glan <glanlv@can-dao.com>
+ * @author Glan
  * @description 描述内容
  * @date 2022-03-28
  * ------------------------------------------------
  */
 @RestController
 @RequestMapping("/hello")
-public class HelloController {
+public class HelloAction {
     
-    private Boolean param = true;
-    
-    private static String STATIC_PARAM = "static_param";
-    
-    @GetMapping("/world")
-    public CommonResponse world(){
-        param = false;
-        return new CommonResponse();
+    @GetMapping("index")
+    public IndexOutput index(@RequestBody IndexInput input){
+        
+        return new IndexOutput();
     }
     
     
