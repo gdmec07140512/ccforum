@@ -1,5 +1,6 @@
 package com.opcc.ccforum.provider.controller;
 
+import com.opcc.ccforum.provider.bean.request.CommonRequest;
 import com.opcc.ccforum.provider.bean.response.CommonResponse;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,13 +19,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/hello")
 public class HelloController {
 
-    private Boolean param = true;
-
-    private static String STATIC_PARAM = "static_param";
-
     @GetMapping("/world")
-    public CommonResponse world() {
-        param = false;
+    public CommonResponse world(CommonRequest commonRequest) {
+        
         return new CommonResponse();
     }
 
