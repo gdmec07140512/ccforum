@@ -10,7 +10,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.opcc.ccforum.common</groupId>
+    
     <artifactId>common</artifactId>
     <description>公用模块</description>
 
