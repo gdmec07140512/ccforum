@@ -22,7 +22,7 @@ public class HelloController {
     @GetMapping("/world")
     public CommonResponse world(CommonRequest commonRequest) {
         
-        return new CommonResponse();
+        return CommonResponse.success();
     }
 
 
